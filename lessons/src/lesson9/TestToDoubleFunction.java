@@ -5,7 +5,7 @@ import java.util.function.ToDoubleFunction;
 /**
  * @author thamsanqa 2024
  **/
-public class TestDoubleFunction {
+public class TestToDoubleFunction {
     public static void main(String[] args) {
         List<SalesTxn> tList = SalesTxn.createTxnList();
         SalesTxn first = tList.get(1);
