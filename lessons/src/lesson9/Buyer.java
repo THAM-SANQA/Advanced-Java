@@ -1,4 +1,4 @@
-package com.example.lambda;
+package lesson9;
 
 import java.util.HashMap;
 import java.util.Map;
