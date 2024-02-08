@@ -1,4 +1,4 @@
-package com.example.generics;
+package lesson7;
 
 public class Shirt{
 

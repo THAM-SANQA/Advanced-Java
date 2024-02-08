@@ -1,5 +1,6 @@
 package lesson6;
 
-public interface WidgetSalesCalcs extends SalesCalcs{
+//interfaces can be extended (widgetSalesCalcs is the sub-interface)
+public interface WidgetSalesCalcs extends /*parent interface*/SalesCalcs{
   public String getWidgetType();
 }
