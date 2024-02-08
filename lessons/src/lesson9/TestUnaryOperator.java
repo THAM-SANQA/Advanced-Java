@@ -13,7 +13,7 @@ public class TestUnaryOperator {
         List<SalesTxn> tList = SalesTxn.createTxnList();
         SalesTxn first = tList.get(0);
 
-        UnaryOperator<String> unaryStr = String::toUpperCase;
+        UnaryOperator<String> unaryStr = s -> s.toUpperCase();
 
         System.out.println("== Upper Buyer");
         System.out.println(unaryStr.apply(first.getBuyerName()));
