@@ -16,7 +16,7 @@ public class TestCollectMap {
         List<Employee> eList = Employee.createShortList();
         
         Map<String, String> gMap;
-        Map<String, List<Employee>> deptMap = new HashMap<>();
+        //Map<String, List<Employee>> deptMap = new HashMap<>();
        
         // Collect eMails and depts to a map
         gMap = eList.stream()
