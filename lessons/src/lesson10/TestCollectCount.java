@@ -18,7 +18,7 @@ public class TestCollectCount {
                 .collect(Collectors.groupingBy(e -> e.getDept(), Collectors.counting()));
 
         System.out.println("\n== Employees by Dept ==");
-        gMap.forEach((k, v) -> System.out.println("Department: " + k + ", Number of employees: " + v));
+        gMap.forEach((k, v) -> System.out.println("Department: " + k + ", Employees/Department: " + v));
 
     }
 
