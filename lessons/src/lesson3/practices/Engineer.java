@@ -1,0 +1,10 @@
+package lesson3.practices;
+
+/**
+ * @author thamsanqa 2024
+ **/
+public class extends Employee{
+    public Engineer(int empId,String name,String ssn,double salary){
+        super(empId,name,ssn,salary);
+    }
+}
