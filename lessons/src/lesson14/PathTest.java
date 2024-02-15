@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 public class PathTest {
 
  public static void main(String[] args) {
-     Path p1 = Paths.get("C:\\Users\\user1\\Documents\\CodeCollegeZA\\BootCamp_2023\\javaAdvanced\\coursework\\lessons\\src\\lesson14\\a.txt");
+     Path p1 = Paths.get(args[0]);
      System.out.format("getFileName: %s%n", p1.getFileName());
      System.out.format("getParent: %s%n", p1.getParent());
      System.out.format("getNameCount: %d%n", p1.getNameCount());

@@ -16,9 +16,6 @@ public class CopyAllLinesTest {
 
     public static void main(String[] args) {
         CopyAllLinesTest copy = new CopyAllLinesTest();
-//        args[0] = "a.txt";
-//        args[1] = "b.txt";
-//        args[2] = "c.txt";
         copy.checkArguments(args);
         try {
             copy.copyFile();
@@ -39,9 +36,6 @@ public class CopyAllLinesTest {
 
     private void checkArguments(String args[]) {
         // Check for a minimum of two arguments
-//        args[0] = "a.txt";
-//        args[1] = "b.txt";
-//        args[2] = "c.txt";
         if (args.length < 2) {
             System.out.println ("Not enough arguments.");
             usage();

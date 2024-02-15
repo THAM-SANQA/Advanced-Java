@@ -18,8 +18,8 @@ public class CopyStream {
         }
 
         // Open the file to write to
-        Path path = Paths.get("C:\\Users\\user1\\Documents\\CodeCollegeZA\\BootCamp_2023\\javaAdvanced\\coursework\\lessons\\src\\lesson14\\a.txt");
-        URI u = URI.create("file:///C:/Users/user1/Documents/CodeCollegeZA/BootCamp_2023/javaAdvanced/coursework/lessons/src/lesson14/a.txt");
+        Path path = Paths.get(args[1]);
+        URI u = URI.create(args[0]);
         try (InputStream in = u.toURL().openStream()) {
             Files.copy(in, path, REPLACE_EXISTING);
         } catch (IOException e) {
