@@ -13,14 +13,14 @@ import java.sql.SQLException;
 public class PreparedStatementTest {
 
     public static void main(String[] args) {
-        String url = "jdbc:derby://localhost:1527/EmployeeDB";
-        String username = "tiger";
-        String password = "scott";
+        String url = "jdbc:postgresql://localhost:5432/EmployeeDB";
+        String username = "postgres";
+        String password = "thami82d";
         String input = "";
         double searchValue;
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         try (Connection con = DriverManager.getConnection(url, username, password)) {
-            PreparedStatement pStmt = con.prepareStatement("SELECT * FROM Employee WHERE Salary > ?");
+            PreparedStatement pStmt = con.prepareStatement("SELECT * FROM public.\"Employee\" WHERE \"SALARY\" > ?");
             // Loop 
             while (true) {
                 System.out.print("Enter salary to search for or Q to quit: ");
