@@ -9,6 +9,7 @@ import java.util.Date;
 
 public class SimpleJDBCTest {
 
+    @SuppressWarnings("AssignmentToCatchBlockParameter")
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/EmployeeDB";
         String username = "postgres";

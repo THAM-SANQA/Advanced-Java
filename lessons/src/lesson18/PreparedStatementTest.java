@@ -16,7 +16,7 @@ public class PreparedStatementTest {
         String url = "jdbc:postgresql://localhost:5432/EmployeeDB";
         String username = "postgres";
         String password = "thami82d";
-        String input = "";
+        String input;
         double searchValue;
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         try (Connection con = DriverManager.getConnection(url, username, password)) {
@@ -28,7 +28,7 @@ public class PreparedStatementTest {
                 if (input.equals("q") || input.equals("Q")) {
                     break;
                 }
-                searchValue = Double.valueOf(input);
+                searchValue = Double.parseDouble(input);
                 pStmt.setDouble(1, searchValue);
                 ResultSet rs = pStmt.executeQuery();
                 while (rs.next()) {

@@ -5,6 +5,7 @@ import java.sql.*;
 /**
  * @author thamsanqa 2024
  **/
+@SuppressWarnings("unused")
 public class DeleteJDBCExample {
     public static void main(String[] args) throws SQLException {
         String url = "jdbc:postgresql://localhost:5432/EmployeeDB";
