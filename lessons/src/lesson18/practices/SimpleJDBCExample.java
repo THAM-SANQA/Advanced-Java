@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
 
+@SuppressWarnings("ALL")
 public class SimpleJDBCExample {
 
     public static void main(String[] args) {
