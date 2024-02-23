@@ -40,7 +40,7 @@ public class SimpleJDBCExample {
             }
             
             // Add a record
-            query = "INSERT INTO public.\"Employee\" VALUES (400, 'Bill', 'Murray','1950-09-21', 150000)";
+            query = "INSERT INTO public.\"Employee\" VALUES (500, 'Bill', 'Murray','1950-09-21', 150000)";
             if (stmt.executeUpdate(query) != 1) {
                 System.out.println ("Failed to add a new employee record");
             }
