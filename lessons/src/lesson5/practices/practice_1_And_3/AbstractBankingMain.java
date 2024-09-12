@@ -35,7 +35,7 @@ public class AbstractBankingMain {
 
         bank.addCustomer("Tim", "Soley", Branch.LA);
         customer = bank.getCustomer(4);
-        customer.addAccount(new CheckingAccount(200.00));
+        customer.addAccount(new CheckingAccount(2000.00));
 
         bank.addCustomer("Maria", "Soley", Branch.BANGALORE);
         customer = bank.getCustomer(5);
